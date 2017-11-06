@@ -1,15 +1,26 @@
 /**index.wxss**/
+
+#form {
+  width: 85%;
+}
+
 .sn {
-  /* border: 1px solid #3da8f9; */
   padding: 2px;
   margin-bottom: 65px;
   border-radius: 5px;
   height: 400px;
-  background: #f3f3f3
+  background: #f3f3f3;
+  width: 100%;
+}
+
+@media (max-width: 320px) {
+  .sn {
+    height: 270px;
+  }
 }
 
 .btn {
-  width:100%;
+  width: 100%;
   color: #fff;
   background: #3da8f9;
   font-size: 14px;
@@ -24,5 +35,5 @@
   margin-top: 20px;
   font: 14px/1.5 normal;
   text-decoration: underline;
-  color: #3da8f9
+  color: #3da8f9;
 }

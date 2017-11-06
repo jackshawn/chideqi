@@ -1,6 +1,6 @@
 <!--index.wxml-->
 <view class="container">
-  <form bindsubmit="bindFormSubmit">
+  <form id="form" bindsubmit="bindFormSubmit">
     <textarea class="sn" rows="10" maxlength="-1" name="textarea" />
     <button class="btn" disabled='{{btnDisabled}}' form-type="submit"> {{btnName}} </button>
   </form>
