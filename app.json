@@ -1,0 +1,13 @@
+{
+  "pages":[
+    
+    "pages/help/help",
+    "pages/index/index"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#3da8f9",
+    "navigationBarTitleText": "吃得起",
+    "navigationBarTextStyle":"white"
+  }
+}

@@ -1,0 +1,7 @@
+<swiper id="swiper" indicator-dots="true" duration="400">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image class="help-images" src="{{item}}"/>
+    </swiper-item>
+  </block>
+</swiper>

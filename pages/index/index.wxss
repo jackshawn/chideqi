@@ -1,0 +1,28 @@
+/**index.wxss**/
+.sn {
+  /* border: 1px solid #3da8f9; */
+  padding: 2px;
+  margin-bottom: 65px;
+  border-radius: 5px;
+  height: 400px;
+  background: #f3f3f3
+}
+
+.btn {
+  width:100%;
+  color: #fff;
+  background: #3da8f9;
+  font-size: 14px;
+}
+
+.result {
+  color: #555;
+  margin-top: 20px;
+}
+
+.help {
+  margin-top: 20px;
+  font: 14px/1.5 normal;
+  text-decoration: underline;
+  color: #3da8f9
+}

@@ -1,0 +1,11 @@
+/* pages/index/help.wxss */
+#swiper {
+  height: 480px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.help-images {
+  width: 250px;
+  height: 444px;
+}
