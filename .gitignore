@@ -1,4 +1,6 @@
 .DS_Store
+.idea/
+images/
 node_modules/
 npm-debug.log
 yarn-error.log

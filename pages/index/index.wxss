@@ -1,22 +1,39 @@
 /**index.wxss**/
 
-#form {
+.wrap {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  bottom: 0;
   width: 85%;
+  margin: auto;
+  transform: translateX(-50%);
 }
 
 .sn {
+  position: absolute;
+  top: 20px;
+  bottom: 120px;
   padding: 2px;
-  margin-bottom: 65px;
+  height: auto;
   border-radius: 5px;
-  height: 400px;
   background: #f3f3f3;
   width: 100%;
+  font-size: 14px;
+  line-height: 2em;
 }
 
-@media (max-width: 320px) {
-  .sn {
-    height: 270px;
-  }
+.placeholder {
+  color: #ccc;
+  font: 14px/2em normal;
+}
+
+.result-wrap {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  text-align: center;
 }
 
 .btn {
@@ -27,13 +44,15 @@
 }
 
 .result {
+  display: block;
   color: #555;
-  margin-top: 20px;
+  font: 14px/1em normal;
+  margin-top: 15px;
 }
 
 .help {
-  margin-top: 20px;
-  font: 14px/1.5 normal;
+  margin-top: 15px;
+  font: 14px/1em normal;
   text-decoration: underline;
   color: #3da8f9;
 }

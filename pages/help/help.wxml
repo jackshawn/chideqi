@@ -2,6 +2,12 @@
   <block wx:for="{{imgUrls}}">
     <swiper-item>
       <image class="help-images" src="{{item}}" />
+      <p class="loading">loading...</p>
     </swiper-item>
   </block>
 </swiper>
+
+<view class="container">
+  <p class="help-detail">1, 长按红包链接, 选择更多, 点击右下角三个圆点;</p>
+  <p class="help-detail">2, 选择添加到邮件, 拷贝地址或整个内容即可查询;</p>
+</view>
