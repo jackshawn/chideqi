@@ -1,9 +1,9 @@
 <!--index.wxml-->
 <div class="wrap">
-  <textarea class="sn" bindinput="getPath" value="{{path}}" placeholder="输入饿了么红包链接地址" placeholder-class="placeholder" maxlength="-1" name="textarea" />
+  <textarea class="sn" bindinput="getUrl" value="{{path}}" placeholder="输入饿了么，美团红包链接地址" placeholder-class="placeholder" maxlength="-1" name="textarea" />
   <div class="result-wrap">
-    <button class="btn" bindtap="queryEleNum" disabled='{{btnDisabled}}'> {{btnName}} </button>
+    <button class="btn" bindtap="queryEleNum" disabled='{{btnDisabled}}' style="background: {{color}}"> {{btnName}} </button>
     <div class="result" wx:if="{{result}}">{{result}}</div>
-    <navigator class="help" wx:if="{{needHelp}}" url="/pages/help/help" hover-class="navigator-hover">help</navigator>
+    <navigator class="help" wx:if="{{needHelp}}" url="/pages/help/help" hover-class="navigator-hover" style="color: {{color}}">help</navigator>
   </div>
 </div>
