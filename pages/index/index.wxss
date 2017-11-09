@@ -43,13 +43,6 @@
   font-size: 14px;
 }
 
-.result {
-  display: block;
-  color: #555;
-  font: 14px/1em normal;
-  margin-top: 15px;
-}
-
 .help {
   margin-top: 15px;
   font: 14px/1em normal;
