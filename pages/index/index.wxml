@@ -1,23 +1,20 @@
 <!--index.wxml-->
 <div class="wrap">
-	<textarea class="sn" bindinput="getUrl" value="{{path}}" placeholder="输入饿了么，美团红包链接地址"
-	          placeholder-class="placeholder-text" maxlength="-1" name="textarea"/>
-	
-	<div class="cover-single" style="display: none">
-		<div class="num">{{users.length}}/{{luckyNum}}</div>
+	<div class="cover-single" wx:if="{{users.length > 0}}">
+		<div class="num">{{users.length}} / {{luckyNum}}</div>
 		<view wx:for="{{users}}">
-			<p class="user">
+			<p class="user" style="color:{{item.is_lucky?color:'#000'}}">
 				<image src="{{item.sns_avatar}}"></image>
 				<span class="name">{{item.sns_username}}</span>
 				<span class="money">¥{{item.amount}}</span>
 				<span class="time">{{item.created_at}}</span>
 			</p>
 		</view>
+		<a class="btn-clear" bindtap="clear" style="color: {{color}}">清  空</a>
 	</div>
-	<div class="btn-fetch" bindtap="queryEleNum" style="color: {{color}};"> 查询</div>
+	<textarea wx:else class="sn" bindinput="getUrl" value="{{path}}" placeholder="输入饿了么，美团红包链接地址" placeholder-class="placeholder-text"
+	 maxlength="-1" name="textarea" />
+	<div class="btn-fetch" bindtap="queryEleNum" style="color: {{color}};"> {{btnName}}</div>
 </div>
-<button class="btn-switch" bindtap="queryEleNum" disabled='{{btnDisabled}}' style="background: {{color}}"> {{btnName}}
-</button>
-<navigator class="btn-help" wx:if="{{needHelp}}" url="/pages/help/help" hover-class="navigator-hover"
-           style="color: {{color}}">help
-</navigator>
+<navigator class="btn-switch" style="background: {{color}}" url="/pages/double/double">双管齐下</navigator>
+<navigator class="btn-help" wx:if="{{needHelp}}" url="/pages/help/help" hover-class="navigator-hover" style="color: {{color}}">云里雾里？</navigator>

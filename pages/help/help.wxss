@@ -1,14 +1,15 @@
 /* pages/index/help.wxss */
 
 #swiper {
-  height: 480px;
-  text-align: center;
-  margin-top: 20px;
+  width: 600rpx;
+  height: 1065rpx;
+  margin: 60rpx auto 40rpx;
 }
 
 .help-images {
-  width: 250px;
-  height: 444px;
+  width: 600rpx;
+  height: 1065rpx;
+  border-radius: 10rpx;
 }
 
 .loading {
@@ -19,7 +20,31 @@
   z-index: -1;
 }
 
+.wrap {
+  display: block;
+  width: 600rpx;
+  margin: 0 auto;
+}
+
+p.arrow {
+  display: flex;
+  justify-content: center
+}
+p.arrow>span {
+  width: 0;
+  height: 0;
+  border: 20rpx solid transparent;
+  border-top: 15rpx solid #ccc;
+}
+
+p {display: block}
+
+.help-title {
+  font: 14px/1.8em normal;
+  font-weight: bold;
+}
+
 .help-detail {
-  width: 90%;
-  font: 14px/1.5em normal;
+  text-indent: 1em;
+  font: 14px/1.8em normal;
 }

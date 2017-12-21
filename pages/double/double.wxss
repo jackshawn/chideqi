@@ -3,7 +3,7 @@
 .wrap {
   display: block;
   width: 620rpx;
-  height: 900rpx;
+  height: 420rpx;
   margin: 65rpx auto 80rpx;
   background: #f7f7f7;
   border-radius: 10rpx;
@@ -16,7 +16,7 @@
 }
 .wrap .sn {
   width: 620rpx;
-  height: 900rpx;
+  height: 420rpx;
   line-height: 2em;
   position: absolute;
   top: 0;
@@ -31,7 +31,7 @@
   z-index: 8;
   width: 580rpx;
   /*padding-left: 40rpx;*/
-  height: 900rpx;
+  height: 420rpx;
   padding: 0 20rpx;
   overflow-y: scroll;
   background: rgba(255,255,255,.9);
@@ -40,34 +40,14 @@
   display: block;
   font-size: 75rpx;
   font-weight: bold;
-  margin: 20rpx auto 18rpx;
+  text-align: center;
+  line-height: 245rpx;
 }
 .wrap .cover-single .user {
   display: flex;
   margin: 16rpx 0;
 }
-.wrap .cover-single .user span{
-  display: inline-block;
-  height: 64rpx;
-  font-size: 28rpx;
-  line-height: 64rpx;
-}
-.wrap .cover-single .user span.name {
-  width: 180rpx;
-  margin-left: 20rpx;
-  text-overflow:ellipsis;
-  overflow:hidden;
-  white-space:nowrap;
-}
-.wrap .cover-single .user span.money {width: 80rpx}
-.wrap .cover-single .user span.money {width: 160rpx}
 
-.wrap .cover-single .user image{
-  display: inline-block;
-  width: 64rpx;
-  height: 64rpx;
-  border-radius: 32rpx;
-}
 
 .wrap .btn-fetch{
   position: absolute;
@@ -103,8 +83,13 @@
 .btn-clear {
   display: block;
   width: 580rpx;
-  font-size: 28rpx;
-  margin-bottom: 60rpx;
-  text-align: center;
-  text-decoration: underline;
+  margin-top: 40rpx;
+}
+.back-arrow {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-radius: 4rpx;
+  border: 20rpx solid transparent;
+  border-right: 15rpx solid #ccc;
 }

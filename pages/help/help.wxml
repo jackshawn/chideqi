@@ -1,4 +1,4 @@
-<swiper id="swiper" indicator-dots="true" duration="400">
+<swiper id="swiper" indicator-dots="true" duration="400" autoplay="true" indicator-active-color="#09bb07">
   <block wx:for="{{imgUrls}}">
     <swiper-item>
       <image class="help-images" src="{{item}}" />
@@ -6,9 +6,16 @@
     </swiper-item>
   </block>
 </swiper>
-
-<view class="container">
-  <p class="help-detail">1, 长按红包链接, 选择更多, 点击右下角三个圆点;</p>
-  <p class="help-detail">2, 选择添加到邮件, 拷贝地址或整个内容即可查询;</p>
-  <p class="help-detail">美团红包只支持查询最大红包是否已被领取</p>
-</view>
+<div class="wrap">
+  <p class="arrow"><span></span></p>
+  <div class="help-title">1, 这个工具能做什么?</div>
+  <p class="help-detail">可以辅助抢饿了么5块钱的红包，满35可用。如果觉得太少，那你可以不用往下看了。</p>
+  <p class="help-title">2, 怎么做到的?</p>
+  <p class="help-detail">点完外卖会有个分享红包链接，这个红包链接固定某个领取的会是最大的。比如说一个链接，第5个领取的红包最大。那么问题来了如果知道当前领取到第几个了，那我不就能领最大的了么。没错，这个小程序就干这事。什么链接？什么分享？完全不知道我在说啥？ok，那你也不用往下看了。</p>
+  <p class="help-title">3, 怎么用?</p>
+  <p class="help-detail">把链接分享到群里面，让别人点。没人点？群不方便发这些？ok，百度「外卖 红包 分享 微信群」一大把，里面都是分享红包链接的。链接分享出去后，把链接地址复制到小程序里就可以查询领取情况了。怎么复制地址呢？手机的话可以参考上面图片步骤，iphone测试是ojbk的，但是安卓机不清楚。当然，用电脑的话直接点击跳转浏览器，复制地址就行了。</p>
+  <p class="help-title">4, 美团可以用么?</p>
+  <p class="help-detail">不太行，你可以试试看。</p>
+  <p class="help-title">5, 最后</p>
+  <p class="help-detail">如你觉得好用，也确实帮到你了，你可以分享给你的好友、同学，谢了。</p>
+</div>
