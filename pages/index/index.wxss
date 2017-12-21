@@ -1,51 +1,89 @@
 /**index.wxss**/
 
 .wrap {
+  display: block;
+  width: 620rpx;
+  height: 900rpx;
+  margin: 65rpx auto 80rpx;
+  background: #f7f7f7;
+  border-radius: 10rpx;
+  position: relative;
+
+}
+.placeholder-text {
+  color: #ccc;
+  font-size: 24rpx;
+}
+.wrap .sn {
+  width: 620rpx;
+  height: 900rpx;
+}
+.wrap .cover-single{
   position: absolute;
   top: 0;
-  left: 50%;
-  bottom: 0;
-  width: 85%;
-  margin: auto;
-  transform: translateX(-50%);
+  left: 0;
+  z-index: 8;
+  width: 580rpx;
+  /*padding-left: 40rpx;*/
+  height: 900rpx;
+  padding: 0 20rpx;
+  overflow-y: scroll;
+}
+.wrap .cover-single .num{
+  display: block;
+  font-size: 75rpx;
+  font-weight: bold;
+  line-height: 150rpx;
+}
+.wrap .cover-single .user {
+  display: flex;
+  margin: 16rpx 0;
+}
+.wrap .cover-single .user span{
+  display: inline-block;
+  height: 64rpx;
+  font-size: 28rpx;
+  line-height: 64rpx;
+}
+.wrap .cover-single .user span.name {
+  width: 180rpx;
+  margin-left: 20rpx;
+  text-overflow:ellipsis;
+  overflow:hidden;
+  white-space:nowrap;
+}
+.wrap .cover-single .user span.money {width: 80rpx}
+.wrap .cover-single .user span.money {width: 160rpx}
+
+.wrap .cover-single .user image{
+  display: inline-block;
+  width: 64rpx;
+  height: 64rpx;
+  border-radius: 32rpx;
 }
 
-.sn {
+.wrap .btn-fetch{
   position: absolute;
-  top: 20px;
-  bottom: 120px;
-  padding: 2px;
-  height: auto;
-  border-radius: 5px;
-  background: #f3f3f3;
-  width: 100%;
-  font-size: 14px;
-  line-height: 2em;
-}
-
-.placeholder {
-  color: #ccc;
-  font: 14px/2em normal;
-}
-
-.result-wrap {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 100px;
+  bottom: -50rpx;
+  right: 50rpx;
+  z-index: 9;
+  width: 100rpx;
+  height: 100rpx;
+  background: #fff;
+  border-radius: 50rpx;
+  line-height: 100rpx;
   text-align: center;
+  font-size: 28rpx;
 }
-
-.btn {
-  width: 100%;
+.btn-switch {
+  width: 620rpx;
+  font-size: 28rpx;
   color: #fff;
-  /*background: #09bb07;*/
-  font-size: 14px;
 }
 
-.help {
-  margin-top: 15px;
-  font: 14px/1em normal;
-  text-decoration: underline;
-  /*color: #09bb07;*/
+.btn-help {
+  width: 620rpx;
+  font-size: 28rpx;
+  margin: 20rpx auto 0;
+  text-align: center;
 }
