@@ -6,7 +6,7 @@
 		</div>
 		<div class="num">{{users.length}} / {{luckyNum}}</div>
 	</div>
-	<textarea wx:else class="sn" bindinput="getUrl" value="{{path}}" placeholder="输入饿了么，美团红包链接地址" placeholder-class="placeholder-text"
+	<textarea wx:else class="sn" bindinput="getUrl" placeholder="输入饿了么，美团红包链接地址" placeholder-class="placeholder-text"
 	 maxlength="-1" name="textarea" />
 	<div class="btn-fetch" bindtap="queryEleNum" style="color: {{color}};"> {{btnName}}</div>
 </div>
@@ -17,10 +17,10 @@
 		</div>
 		<div class="num">{{users1.length}} / {{luckyNum1}}</div>
 	</div>
-	<textarea wx:else class="sn" bindinput="getUrl1" value="{{path}}" placeholder="输入饿了么，美团红包链接地址" placeholder-class="placeholder-text"
+	<textarea wx:else class="sn" bindinput="getUrl1" placeholder="输入饿了么，美团红包链接地址" placeholder-class="placeholder-text"
 	 maxlength="-1" name="textarea" />
 	<div class="btn-fetch" bindtap="queryEleNum1" style="color: {{color}};"> {{btnName1}}</div>
 </div>
 
-<navigator class="btn-switch" style="background: {{color}}" url="/pages/index/index">单枪直入</navigator>
+<navigator class="btn-switch" style="background: {{color}}" open-type="navigateBack">单枪直入</navigator>
 <navigator class="btn-help" wx:if="{{needHelp}}" url="/pages/help/help" hover-class="navigator-hover" style="color: {{color}}">云里雾里？</navigator>

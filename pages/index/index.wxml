@@ -7,7 +7,7 @@
 				<image src="{{item.sns_avatar}}"></image>
 				<span class="name">{{item.sns_username}}</span>
 				<span class="money">¥{{item.amount}}</span>
-				<span class="time">{{item.created_at}}</span>
+				<span class="time">{{item.time}}</span>
 			</p>
 		</view>
 		<a class="btn-clear" bindtap="clear" style="color: {{color}}">清  空</a>

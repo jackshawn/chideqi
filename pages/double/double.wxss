@@ -3,7 +3,7 @@
 .wrap {
   display: block;
   width: 620rpx;
-  height: 420rpx;
+  height: 410rpx;
   margin: 65rpx auto 80rpx;
   background: #f7f7f7;
   border-radius: 10rpx;
@@ -16,7 +16,7 @@
 }
 .wrap .sn {
   width: 620rpx;
-  height: 420rpx;
+  height: 410rpx;
   line-height: 2em;
   position: absolute;
   top: 0;
@@ -31,7 +31,7 @@
   z-index: 8;
   width: 580rpx;
   /*padding-left: 40rpx;*/
-  height: 420rpx;
+  height: 410rpx;
   padding: 0 20rpx;
   overflow-y: scroll;
   background: rgba(255,255,255,.9);
