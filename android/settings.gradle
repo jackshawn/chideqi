@@ -1,0 +1,3 @@
+rootProject.name = 'eleApk'
+
+include ':app'
