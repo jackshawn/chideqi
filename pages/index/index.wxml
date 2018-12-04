@@ -12,7 +12,7 @@
 		</view>
 		<a class="btn-clear" bindtap="clear" style="color: {{color}}">清  空</a>
 	</div>
-	<textarea wx:else class="sn" bindinput="getUrl" value="{{path}}" placeholder="输入饿了么，美团红包链接地址" placeholder-class="placeholder-text"
+	<textarea wx:else class="sn" bindinput="getUrl" value="{{path}}" placeholder="输入饿了么红包链接地址" placeholder-class="placeholder-text"
 	 maxlength="-1" name="textarea" />
 </div>
 <navigator class="btn-switch" style="background: {{color}}" bindtap="queryEleNum">查 询</navigator>
