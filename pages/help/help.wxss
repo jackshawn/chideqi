@@ -40,6 +40,8 @@ p.arrow>span {
 p {display: block}
 
 .help-title {
+    display: block;
+    text-align: center;
   font: 14px/1.8em normal;
   font-weight: bold;
 }
