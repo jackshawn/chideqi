@@ -63,7 +63,7 @@ Page({
 
             // luckuy num
             _this.setData({
-                luckyNum: url.slice(url.indexOf('&lucky_number=') + 14, url.indexOf('&track_id'))
+                luckyNum: 15
             });
 
 			return r;
@@ -93,7 +93,8 @@ Page({
                             })
                         } else {
                             res.data.promotion_records.forEach(i => {
-                                i.time = new Date(i.created_at).toString().substr(16,8)
+                                let d = new Date(i.created_at * 1000)
+                                i.time = d.getHours() + ':' + d.getMinutes()
                         })
                             _this.setData({
                                 btnName: '查 询',
